@@ -12,8 +12,8 @@ public class LoginGUI extends JFrame {
     private final String validPassword = "glcs1234";
 
     public LoginGUI(BookList bookList) {
-        // BookList 인스턴스 생성 (로그인 후 GUI에 전달할 용도)
-        this.bookList = new BookList();
+        // 메인 화면과 같은 BookList를 써야 관리자 변경 사항이 메인 창 종료 시 덮어써지지 않음
+        this.bookList = bookList;
 
         setTitle("로그인");
         setSize(300, 150);
