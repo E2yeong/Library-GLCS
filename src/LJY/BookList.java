@@ -103,6 +103,7 @@ public class BookList {
             book.borrowedBy = studentName;
             book.grade = grade;
             book.borrowTime = System.currentTimeMillis();
+            saveData();
             return true;
         }
         return false;
@@ -137,6 +138,7 @@ public class BookList {
             book.borrowedBy = "";
             book.grade = "";
             book.borrowTime = 0;
+            saveData();
             return true;
         }
         return false;

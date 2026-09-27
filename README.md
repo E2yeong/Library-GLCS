@@ -42,5 +42,5 @@ Library.exe              Windows build
 ## Notes
 
 - Books are stored as a serialized `HashMap` (barcode → book) in `books.dat`. If the file is missing, the app starts with five sample books.
-- Adding or deleting a book saves right away. Loans and returns are saved when the main window is closed.
+- Every change (borrow, return, add, delete) is written to `books.dat` right away.
 - The admin ID and password are hardcoded in `src/LoginGUI.java`. Change them before using this anywhere real.
